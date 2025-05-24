@@ -19,33 +19,43 @@
                     <div class="navbar-start">
                         <div class="dropdown">
                             <div>
-                                <button class="btn btn-lg bg-lime-400 rounded-2xl">Large</button>
-
+                                <button
+                                    class="btn btn-lg bg-lime-400 rounded-2xl btn btn-sm sm:btn-md lg:btn-lg">Blog</button>
                             </div>
                         </div>
                     </div>
-                    <div class="navbar-center">
+                    <div class="navbar-center sm:w-auto">
                         <img src="./assets/logo.png" alt="">
-                        <a class="btn btn-ghost text-xl font-extrabold">DONATE BANGLADESH</a>
+                        <a class="btn btn-ghost font-bold sm:text-md md:font-bold xl:font-extrabold text-xl ">DONATE
+                            BANGLADESH</a>
                     </div>
                     <div class="navbar-end">
                         <img src="./assets/coin.png" alt="">
-                        <a class="btn btn-ghost text-xl font-bold">10000 <span>BDT</span></a>
-
+                        <a id="main-balance"
+                            class="btn btn-ghost text-xs font-bold sm:text-md lg:text-lg xl:text-xl 2xl:text-2xl">10000
+                            <span>BDT</span></a>
                     </div>
-
                 </div>
             </div>
-            <div class="flex justify-center pt-32 space-x-5">
-                <button class="btn text-black bg-slate-200 rounded-md border-1 border-slate-400">Donation</button>
-                <button class="btn text-black bg-slate-200 rounded-md border-1 border-slate-400">History</button>
-            </div>
+            <section class="flex justify-center w-screen mt-10">
+                <div class="pt-32 space-x-5">
+                    <button id="show-btn-1"
+                        class="btn text-black rounded-md border-1 border-slate-400  show-btn">Donation</button>
+                    <button id="show-btn-2"
+                        class="btn text-black rounded-md border-1 border-slate-400 show-btn">History</button>
+                </div>
+            </section>
         </section>
         <!-- navbar end -->
+        <!-- Button start -->
+
+        <!-- Button End -->
+    </main>
+    <section id="donation-section" class="hidden">
         <!-- 1st card start -->
-        <section id="donate" class="min-w-5 mx-36 mt-10">
+        <section id="donate-1" class="min-w-5 mx-36 mt-10">
             <div>
-                <div class="card card-side">
+                <div class="card card-side flex flex-col sm:flex-col xl:flex-row 2xl:flex-row ">
                     <figure>
                         <img src="./assets/noakhali.png" alt="Movie" />
                     </figure>
@@ -66,9 +76,10 @@
                                 efforts and making a positive impact on the lives of those in need.</p>
                         </div>
                         <div class="card-actions justify-center">
-                            <input type="text" class="border-none rounded-lg w-full p-1"
+                            <input id="donate-input-1" type="text" class="border-none rounded-lg w-full p-1"
                                 placeholder="Write Donation Amount ">
-                            <button class="btn bg-lime-400 rounded-lg border-none w-full">Donate Now</button>
+                            <button id="donate-input-btn-1" class="btn bg-lime-400 rounded-lg border-none w-6/12">Donate
+                                Now</button>
                         </div>
                     </div>
                 </div>
@@ -76,9 +87,9 @@
         </section>
         <!-- card end -->
         <!-- 2nd card start -->
-        <section id="donate" class="min-w-5 mx-36 mt-10">
+        <section id="donate-2" class="min-w-5 mx-36 mt-10">
             <div>
-                <div class="card card-side">
+                <div class="card card-side flex flex-col sm:flex-col xl:flex-row 2xl:flex-row">
                     <figure>
                         <img src="./assets/feni.png" alt="Movie" />
                     </figure>
@@ -86,22 +97,21 @@
                         <div class="flex space-x-2">
                             <img src="./assets/coin.png" alt=""><a class="text-xl font-bold">600</a>
                         </div>
-                        <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                         <div>
-                            <p class="text-[16px]"> The recent floods in Noakhali have caused significant damage to <br>
-                                homes
-                                infrastructure.
-                                Your
-                                donation will help provide essential supplies and to those affected by this disaster.
-                                Every
-                                contribution, <br> big or small, makes difference. Please join us in supporting the
-                                relief <br>
-                                efforts and making a positive impact on the lives of those in need.</p>
+                            <p class="text-[16px]"> The recent floods in Feni have devastated local communities, leading
+                                <br> to severe disruption and loss. Your generous donation will help <br> provide
+                                immediate aid, including food, clean water, and medical <br> supplies, to those affected
+                                by this calamity. Together, we can offer <br> crucial support and help rebuild lives in
+                                the aftermath of this disaster. <br> Every contribution counts towards making a real
+                                difference. Please <br> consider donating today to assist those in urgent need.
+                            </p>
                         </div>
                         <div class="card-actions justify-center">
-                            <input type="text" class="border-none rounded-lg w-full p-1"
+                            <input id="donate-input-2" type="text" class="border-none rounded-lg w-full p-1"
                                 placeholder="Write Donation Amount ">
-                            <button class="btn bg-lime-400 rounded-lg border-none w-full">Donate Now</button>
+                            <button id="donate-input-btn-2" class="btn bg-lime-400 rounded-lg border-none w-6/12">Donate
+                                Now</button>
                         </div>
                     </div>
                 </div>
@@ -109,9 +119,9 @@
         </section>
         <!-- card end -->
         <!-- 3rd card start -->
-        <section id="donate" class="min-w-5 mx-36 mt-10">
+        <section id="donate-3" class="min-w-5 mx-36 mt-10">
             <div>
-                <div class="card card-side">
+                <div class="card card-side flex flex-col sm:flex-col xl:flex-row 2xl:flex-row">
                     <figure>
                         <img src="./assets/quota-protest.png" alt="Movie" />
                     </figure>
@@ -119,34 +129,56 @@
                         <div class="flex space-x-2">
                             <img src="./assets/coin.png" alt=""><a class="text-xl font-bold">1200</a>
                         </div>
-                        <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
                         <div>
-                            <p class="text-[16px]"> The recent floods in Noakhali have caused significant damage to <br>
-                                homes
-                                infrastructure.
-                                Your
-                                donation will help provide essential supplies and to those affected by this disaster.
-                                Every
-                                contribution, <br> big or small, makes difference. Please join us in supporting the
-                                relief <br>
-                                efforts and making a positive impact on the lives of those in need.</p>
+                            <p class="text-[16px]"> The recent Quota movement has resulted in numerous injuries and <br>
+                                significant hardship for many individuals. Your support is crucial in <br> providing
+                                medical assistance, rehabilitation, and necessary supplies <br> to those affected. By
+                                contributing, you help ensure that injured <br> individuals receive the care and support
+                                they need during this <br> challenging time. Every donation plays a vital role in
+                                alleviating their <br> suffering and aiding in their recovery. Please consider making a
+                                <br> donation to support these brave individuals in their time of need.
+                            </p>
                         </div>
                         <div class="card-actions justify-center">
-                            <input type="text" class="border-none rounded-lg w-full p-1"
+                            <input id="donate-input-3" type="text" class="border-none rounded-lg w-full p-1"
                                 placeholder="Write Donation Amount ">
-                            <button class="btn bg-lime-400 rounded-lg border-none w-full">Donate Now</button>
+                            <button id="donate-input-btn-3" class="btn bg-lime-400 rounded-lg border-none w-6/12">Donate
+                                Now</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- card end -->
-        <!-- history start -->
-        <section id="history-section hidden">
-
-        </section>
-        <!-- history end -->
-    </main>
+    </section>
+    <!-- history start -->
+    <section id="history-section" class="hidden">
+        <p class="font-bold text-3xl text-center">TRANSECTION HISTORY</p>
+        <div id="transection-fild" class="flex flex-col justify-center m-10 space-y-3">
+        </div>
+    </section>
+    <!-- history end -->
+    <!-- Open the modal using ID.showModal() method start-->
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box flex flex-col space-y-5">
+            <h3 class="text-lg font-bold text-center">Congratulation!</h3>
+            <div class="flex justify-center">
+                <img src="./assets/coin.png" alt="">
+            </div>
+            <div class="flex flex-col items-center">
+                <p>You have donate for humankind</p>
+                <h2 class="font-extrabold">Successfully</h2>
+            </div>
+            <div class="modal-action flex justify-center">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close Confirmation</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+    <!-- Open the modal using ID.showModal() method end-->
     <script src="./js-file/utilitis.js"></script>
     <script src="./js-file/allInOne.js"></script>
 </body>
